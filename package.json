@@ -4,7 +4,15 @@
   "description": "An instrument tuner for the web",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard",
+    "build-js": "browserify src/tuner.js -t babelify -o dist/tuner.js",
+    "watch-js": "watchify src/tuner.js -t babelify -o dist/tuner.js -dv",
+    "start": "npm run watch-js & serve"
+  },
+  "standard": {
+    "ignore": [
+      "dist/**"
+    ]
   },
   "repository": {
     "type": "git",
@@ -21,5 +29,12 @@
   "bugs": {
     "url": "https://github.com/unkillbob/web-tuner/issues"
   },
-  "homepage": "https://github.com/unkillbob/web-tuner"
+  "homepage": "https://github.com/unkillbob/web-tuner",
+  "devDependencies": {
+    "babelify": "^6.0.2",
+    "browserify": "^9.0.8",
+    "serve": "^1.4.0",
+    "standard": "^3.7.1",
+    "watchify": "^3.1.2"
+  }
 }
