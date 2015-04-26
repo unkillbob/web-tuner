@@ -1,0 +1,25 @@
+{
+  "name": "web-tuner",
+  "version": "1.0.0",
+  "description": "An instrument tuner for the web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:unkillbob/web-tuner.git"
+  },
+  "keywords": [
+    "guitar",
+    "audio",
+    "tuner",
+    "instrument"
+  ],
+  "author": "James Bunt <james.bunt@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unkillbob/web-tuner/issues"
+  },
+  "homepage": "https://github.com/unkillbob/web-tuner"
+}
